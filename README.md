@@ -1,77 +1,145 @@
-# SauceDemo QA Project
 
-This repository demonstrates a structured and systematic QA approach to software quality assurance (QA) for the [SauceDemo](https://www.saucedemo.com/) e-commerce web application. The project applies structured testing practices following the Software Testing Life Cycle (STLC) to ensure clarity and traceability, and is designed with future automation in mind.
+# 🚀 SauceDemo QA Testing Project
+
+Structured Manual QA project conducted on the SauceDemo web application.
+
+This repository demonstrates a practical application of the Software Testing Life Cycle (STLC), including requirement analysis, test scenario design, validation testing, and traceability mapping.
+
+The goal of this project is to showcase structured thinking, functional testing skills, and traceability practices expected from a Junior QA Engineer.
 
 ---
 
 ## Project Overview
-- **Application:** E-commerce Web Application
+
+- **Application:** SauceDemo (E-commerce Demo Application)
+- **Testing Type:** Manual Functional Testing
 - **Target Website:** https://www.saucedemo.com/
-- **Application Owner:** Sauce Labs
-- **Testing Scope:** Functional Web Testing (UI, business logic, session management)
+
+**Scope:**
+- Login
+- Logout
+- Add to Cart
+- View Cart
+- Checkout (Step One, Overview, Completion)
+
+**Out of Scope:**
+- API Testing
+- Performance Testing
+- Security Testing
+- Database Validation
 
 ---
 
-## 🎯 Project Objectives
-- Apply software testing fundamentals using a systematic and process-oriented mindset
-- Analyze system behavior to derive and document requirements
-- Design robust, maintainable test cases for positive, negative, and edge scenarios
-- Execute tests systematically and document results clearly
-- Report and manage defects with actionable detail for development teams
+
+
+## Objectives
+
+- Apply STLC concepts to a real demo web application
+- Design structured test scenarios based on acceptance criteria
+- Perform positive and negative testing
+- Ensure full business flow validation
+- Maintain requirement-to-test traceability using RTM
 
 ---
 
-## Module Coverage
-- **Authentication** – User login & validation
-- **Product** – Product listing & sorting
-- **Cart** – Cart operations & validation
-- **Checkout** – Form validation & order completion
+
+## Features Covered
+
+**Authentication**
+- Valid login
+- Invalid credentials handling
+- Locked user validation
+- Session persistence
+- Logout and session termination
+
+**Cart Management**
+- Add to cart
+- Remove from cart
+- Cart badge updates
+- Empty cart behavior
+
+**Checkout Process**
+- Navigation to checkout
+- Required field validation
+- Overview page verification
+- Order completion
+- Post-completion redirection
+
 
 ---
 
-## ✅ In Scope
-- Functional UI testing
+
+## Repository Structure
+
+```text
+qa-saucedemo-e2e-ts/
+│   README.md
+│   rtm.md
+│   saucedemo-user-stories.md
+│
+└───test-scenarios
+    add-to-cart-test-scenarios.md
+    checkout-test-scenarios.md
+    login-test-scenarios.md
+    logout-test-scenarios.md
+    view-cart-test-scenarios.md
+```
+
+**Key Files:**
+- saucedemo-user-stories.md: Structured user stories and acceptance criteria
+- test-scenarios/: Functional test scenarios organized by feature module
+- rtm.md: Requirement Traceability Matrix mapping requirements to test scenarios
+
+---
+
+
+## Testing Approach
+
+This project follows a structured workflow:
+
+Requirement
+→ Acceptance Criteria
+→ Test Scenarios
+→ Test Cases
+→ Validation
+→ Traceability (RTM)
+
+Both happy path and negative scenarios are covered to ensure proper validation and navigation control.
+
+---
+
+
+
+## Validation Strategy
+
+- Required field validation
+- Navigation control verification
+- URL verification for page transitions
+- Error message verification
+- Session handling validation
+
+---
+
+
+
+## Skills Demonstrated
+
+- Requirement analysis
+- Test scenario design
 - Negative testing
-- Boundary value analysis
-- Validation & error message verification
+- Functional flow validation
+- Traceability mapping
+- Clear and structured documentation
 
-## 🚫 Out of Scope
-- Performance testing
-- API testing
-- Security testing
-- Load / stress testing
 
 ---
 
-## 🛠️ Testing Process (STLC)
 
-1️⃣ **Requirements Analysis & Review**
-- Observe and model system behavior
-- Write User Stories and Acceptance Criteria
-- Develop a Requirement Traceability Matrix (RTM) for coverage mapping
 
-2️⃣ **Test Case Design**
-- Define Test Scenarios for comprehensive coverage
-- Author Test Cases with clear steps, data, and expected outcomes
-- Ensure test cases are modular and reusable
+## Author
 
-3️⃣ **Test Execution & Traceability**
-- Execute tests systematically and log results for traceability
-- Use version control and documentation for reproducibility
-
-4️⃣ **Defect Reporting & Management**
-- Report defects with detailed steps, logs, and environment information
-- Document and communicate defects with sufficient detail for resolution
+QA Engineer (Entry-Level) focused on structured testing practices, clear documentation, and continuous learning.
 
 ---
 
-## Best Practices
-- Design test cases for clarity, maintainability, and scalability
-- Ensure coverage of positive, negative, and edge cases
-- Maintain strong traceability between requirements, test cases, and defects
-- Provide actionable, reproducible defect reports
-- Write test cases in a structured format that can be adapted for automation in the future
-
----
-
-> **Note:** This project exemplifies a systematic QA process, emphasizing analysis, traceability, and continuous improvement to support high-quality software delivery and future automation.
+> **Note:** This project is created for learning and portfolio purposes. It demonstrates manual QA methodology applied to a publicly available demo web application.

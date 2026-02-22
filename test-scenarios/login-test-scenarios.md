@@ -1,6 +1,6 @@
 # Login Test Scenarios
 
-### Login
+
 
 **As a registered user**
 I want to log in
@@ -65,17 +65,30 @@ From Acceptance Criteria:
 | TS-LOGIN-03 | Verify system displays error message when username is incorrect |
 | TS-LOGIN-04 | Verify system displays error message when both username and password are incorrect |
 | TS-LOGIN-05 | Verify system prevents login for locked user            |
-| TS-LOGIN-06 | Verify system requires username when password field is empty |
-| TS-LOGIN-07 | Verify system requires password when username field is empty |
-| TS-LOGIN-08 | Verify login is case-sensitive                          |
-| TS-LOGIN-09 | Verify system behavior when username contains leading or trailing spaces |
-| TS-LOGIN-10 | Verify system behavior when entering excessively long input in username field |
+| TS-LOGIN-06 | Verify system requires username and password when both fields are empty |
+| TS-LOGIN-07 | Verify system requires username when password field is empty |
+| TS-LOGIN-08 | Verify system requires password when username field is empty |
+| TS-LOGIN-09 | Verify login is case-sensitive                          |
+| TS-LOGIN-10 | Verify system behavior when username contains leading or trailing spaces |
 | TS-LOGIN-11 | Verify user remains logged in after page refresh         |
-| TS-LOGIN-12 | Verify user is redirected to login page after logout     |
-| TS-LOGIN-13 | Verify user cannot access inventory page after logout using browser back button |
 
 ---
 
+## Test Steps Template
+
+| Test Scenario ID | Description | Steps | Expected Result | Status |
+|------------------|-------------|-------|-----------------|--------|
+| TS-LOGIN-01 | Verify successful login with valid credentials and redirection to inventory page | 1. Navigate to login page 2. Enter valid username and password 3. Click login button | User is redirected to the inventory page and product listings are displayed. | Pass/Fail |
+| TS-LOGIN-02 | Verify system displays error message when password is incorrect | 1. Navigate to login page 2. Enter valid username and invalid password 3. Click login button | An error message is displayed indicating invalid credentials. | Pass/Fail |
+| TS-LOGIN-03 | Verify system displays error message when username is incorrect | 1. Navigate to login page 2. Enter invalid username and valid password 3. Click login button | An error message is displayed indicating invalid credentials. | Pass/Fail |
+| TS-LOGIN-04 | Verify system displays error message when both username and password are incorrect | 1. Navigate to login page 2. Enter invalid username and invalid password 3. Click login button | An error message is displayed indicating invalid credentials. | Pass/Fail |
+| TS-LOGIN-05 | Verify system prevents login for locked user | 1. Navigate to login page 2. Enter locked user's username and password 3. Click login button | An error message is displayed indicating that the user account is locked and cannot log in. | Pass/Fail |
+| TS-LOGIN-06 | Verify system requires username and password when both fields are empty | 1. Navigate to login page 2. Leave both username and password fields empty 3. Click login button | A validation message is displayed indicating that both fields are required. | Pass/Fail |
+| TS-LOGIN-07 | Verify system requires username when password field is empty | 1. Navigate to login page 2. Leave username field empty and enter valid password 3. Click login button | A validation message is displayed indicating that the username field is required. | Pass/Fail |
+| TS-LOGIN-08 | Verify system requires password when username field is empty | 1. Navigate to login page 2. Enter valid username and leave password field empty 3. Click login button | A validation message is displayed indicating that the password field is required. | Pass/Fail |
+| TS-LOGIN-09 | Verify login is case-sensitive | 1. Navigate to login page 2. Enter valid username with different case and valid password 3. Click login button | An error message is displayed indicating invalid credentials. | Pass/Fail |
+| TS-LOGIN-10 | Verify system behavior when username contains leading or trailing spaces | 1. Navigate to login page 2. Enter valid username with leading/trailing spaces and valid password 3. Click login button | An error message is displayed indicating invalid credentials. | Pass/Fail |
+| TS-LOGIN-11 | Verify user remains logged in after page refresh | 1. Log in with valid credentials 2. Refresh the page | User remains logged in and is still on the inventory page after refreshing. | Pass/Fail |
 
 
 

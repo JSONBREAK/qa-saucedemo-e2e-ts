@@ -36,12 +36,14 @@ So that my session is securely terminated
 ### Add to Cart
 
 **As a logged-in user**
-I want to add products to my cart
-So that I can purchase them later
+I want to manage products in my cart
+So that I can review items before checkout
 
 **Acceptance Criteria**
-- Clicking "Add to Cart" increases cart badge count
-- Item appears in cart page
+- Clicking “Add to Cart” adds item to cart
+- Cart badge count increases
+- Button changes to “Remove”
+
 
 ---
 
