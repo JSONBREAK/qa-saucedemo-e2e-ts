@@ -71,11 +71,14 @@ The goal of this project is to showcase structured thinking, functional testing 
 
 ## Repository Structure
 
+
 ```text
-qa-saucedemo-e2e-ts/
+qa-saucedemo-test-design/
 │   README.md
 │   rtm.md
 │   saucedemo-user-stories.md
+│   defect-log.md
+│   defect-report.md
 │
 └───test-scenarios
     add-to-cart-test-scenarios.md
@@ -85,10 +88,24 @@ qa-saucedemo-e2e-ts/
     view-cart-test-scenarios.md
 ```
 
+
 **Key Files:**
 - saucedemo-user-stories.md: Structured user stories and acceptance criteria
 - test-scenarios/: Functional test scenarios organized by feature module
 - rtm.md: Requirement Traceability Matrix mapping requirements to test scenarios
+- defect-log.md: Ongoing log of defects found during testing
+- defect-report.md: Summarized defect report for management or stakeholders
+
+---
+
+## Defect Tracking
+
+Defects found during testing are tracked in two files:
+
+- **defect-log.md:** A detailed log of all defects found, including status, severity, and feature area.
+- **defect-report.md:** A summarized report of key or unresolved defects for management review.
+
+This ensures transparency and traceability of issues throughout the QA process.
 
 ---
 
